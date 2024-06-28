@@ -13,8 +13,11 @@ warnings.filterwarnings("ignore")
 
 load_dotenv()
 
-openai_api_key = os.getenv("OPENAI_API_KEY")
-openai_org_key = os.getenv("OPENAI_ORGANIZATION")
+#openai_api_key = os.getenv("OPENAI_API_KEY")
+#openai_org_key = os.getenv("OPENAI_ORGANIZATION")
+
+openai_api_key = st.secrets["OPENAI_API_KEY"]
+openai_org_key = st.secrets["OPENAI_ORGANIZATION"]
 
 
 
